@@ -1,0 +1,21 @@
+{
+  "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-console": "off"
+  },
+  "settings": {}
+}
