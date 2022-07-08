@@ -7,11 +7,27 @@
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <main>
-      <div>
-        <button id="symbol-rock" class="btn btn__symbol" data-symbol="rock">Rock</button>
-        <button id="symbol-paper" class="btn btn__symbol" data-symbol="paper">Paper</button>
-        <button id="symbol-scissors" class="btn btn__symbol" data-symbol="scissors">Scissors</button>
+    <header class="header">Rock - Paper - Scissors Game</header>
+    <main class="main">
+      <div class="scoreboard">
+        <p class="scoreboard__team">Player</p>
+        <p class="scoreboard__score">0:0</p>
+        <p class="scoreboard__team">Computer</p>
+      </div>
+      <div class="arena">
+        <div id="arena-player-one" class="arena__team">Player</div>
+        <div id="arena-player-two" class="arena__team">Computer</div>
+      </div>
+      <div class="btns-symbol">
+        <button id="symbol-rock" class="btn-symbol" data-symbol="rock" aria-labelledby="rock">
+          <img class="btn-symbol__icon" src="./assets/rock.png" alt="" />
+        </button>
+        <button id="symbol-paper" class="btn-symbol" data-symbol="paper" aria-labelledby="paper">
+          <img class="btn-symbol__icon" src="./assets/paper.png" alt="" />
+        </button>
+        <button id="symbol-scissors" class="btn-symbol" data-symbol="scissors" aria-labelledby="scissors">
+          <img class="btn-symbol__icon" src="./assets/scissors.png" alt="" />
+        </button>
       </div>
     </main>
   </body>

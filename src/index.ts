@@ -3,7 +3,7 @@ import HumanPlayer from './js/HumanPlayer'
 import './styles/style.scss'
 
 const init = () => {
-  const buttons = document.querySelectorAll('.btn__symbol')
+  const buttons = document.querySelectorAll('.btn-symbol')
   let humanPlayer
   const computerPlayer = ComputerPlayer()
 
