@@ -88,29 +88,3 @@ body {
     width: 50%;
   }
 }
-
-.btns {
-  display: flex;
-  flex-direction: column;
-}
-
-.btn {
-  border: 2px solid black;
-  padding: 1rem 2rem;
-  background-color: transparent;
-  margin-top: 1.5rem;
-  font-size: 1.6rem;
-  cursor: pointer;
-  &:first-of-type {
-    margin-top: 3rem;
-  }
-  &:not(:last-of-type) {
-    margin-bottom: 1.5rem;
-  }
-  &:hover {
-    background-color: rgb(219, 207, 207);
-  }
-  &:disabled {
-    cursor: not-allowed;
-  }
-}
