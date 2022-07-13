@@ -8,16 +8,21 @@
   </head>
   <body>
     <header class="header">Rock - Paper - Scissors Game</header>
-    <main class="main">
+    <main class="main"></main>
+    <template id="scoreboard-template">
       <div class="scoreboard">
         <p class="scoreboard__team">Player</p>
         <p id="score" class="scoreboard__score">0 : 0</p>
         <p class="scoreboard__team">Computer</p>
       </div>
+    </template>
+    <template id="arena-template">
       <div class="arena">
         <div id="arena-player-one" class="arena__team">Player</div>
         <div id="arena-player-two" class="arena__team">Computer</div>
       </div>
+    </template>
+    <template id="btns-with-symbol-template">
       <div class="btns-symbol">
         <button id="symbol-rock" class="btn-symbol" data-symbol="rock" aria-labelledby="rock">
           <img class="btn-symbol__icon" src="./assets/rock.png" alt="" />
@@ -29,6 +34,18 @@
           <img class="btn-symbol__icon" src="./assets/scissors.png" alt="" />
         </button>
       </div>
-    </main>
+    </template>
+    <template id="menu-template">
+      <div class="btns">
+        <button id="player-computer-mode-btn" class="btn">Play with computer</button>
+        <button id="player-friend-mode-btn" class="btn" disabled>Play with friend</button>
+        <button id="player-random-mode-btn" class="btn" disabled>Play with random oponnent</button>
+      </div>
+    </template>
+    <template id="back-menu-template">
+      <div class="btns">
+        <button id="back-to-the-menu-btn" class="btn">Back to select mode game</button>
+      </div>
+    </template>
   </body>
 </html>

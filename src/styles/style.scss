@@ -88,3 +88,25 @@ body {
     width: 50%;
   }
 }
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background-color: transparent;
+  &:first-of-type {
+    margin-top: 3rem;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
